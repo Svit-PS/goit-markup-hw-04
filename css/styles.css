@@ -181,7 +181,7 @@ p {
 .hero {
   /* *background-color: var(--dark-bcg-color); */
   background-image: linear-gradient(to right, var(--hero-bcg), var(--hero-bcg)),
-    url("/images/hero-img.jpg");
+    url("../images/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
