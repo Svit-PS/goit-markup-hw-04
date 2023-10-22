@@ -167,7 +167,8 @@ p {
   margin-right: 10px;
 }
 
-.link-contact:hover .contact-svg {
+.link-contact:hover .contact-svg,
+.link-contact:focus .contact-svg {
   fill: var(--accent-txt-color);
 }
 
@@ -186,7 +187,6 @@ p {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-right: auto;
@@ -240,9 +240,22 @@ p {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.adv-box-svg {
+  display: flex;
+  background-color: var(--secondary-bcg-color);
+  justify-content: center;
+  align-items: center;
+  height: 120px; 
+}
+
+.adv-svg {
+ 
+}
+
 .adv-bcg::before {
   content: "";
   display: block;
+  background-image: url(../images/svg/astronaut.svg);
   background-color: var(--secondary-bcg-color);
   background-position: center;
   background-size: 70px 70px;
@@ -251,20 +264,8 @@ p {
   width: 270px;
 }
 
-.adv-bcg:nth-child(1)::before {
-  background-image: url(../images/svg/antenna.svg);
-}
-
-.adv-bcg:nth-child(2)::before {
-  background-image: url(../images/svg/clock.svg);
-}
-
-.adv-bcg:nth-child(3)::before {
-  background-image: url(../images/svg/diagram.svg);
-}
-
 .adv-bcg:nth-child(4)::before {
-  background-image: url(../images/svg/astronaut.svg);
+  
 }
 
 .advan-title {
@@ -326,6 +327,8 @@ p {
 .team-box {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-title {
@@ -348,8 +351,6 @@ p {
 .social-list {
   display: flex;
   gap: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
   margin-top: 16px;
 }
 
@@ -415,14 +416,14 @@ p {
 
 .fl-box {
   display: flex;
+  align-items: baseline;
 }
 
 .fl-box1 {
-  width: 321px;
+  margin-right: 70px;
 }
 
 .fl-box2 {
-  width: 321px;
 }
 
 .flooter address {
@@ -462,7 +463,6 @@ letter-spacing: 0.03em;
 text-align: left;
 text-transform: uppercase;
 color: var(--white-txt-color);
-padding-top: 12px;
 }
 
 .social-flooter-list {
@@ -539,14 +539,16 @@ padding-top: 12px;
 }
 
 .portfolio-link {
+  display: block;
   color: currentColor;
   text-decoration: none;
 }
 
-.portfolio-link:hover {
+.portfolio-link:hover,
+ .portfolio-link:focus{
   box-shadow: 1px 4px 6px 0px #00000029,
   0px 4px 4px 0px #0000000F,
-  box-shadow: 0px 1px 1px 0px #0000001F;
+  0px 1px 1px 0px #0000001F;
 }
 
 
